@@ -132,7 +132,7 @@ body {
 
 .homepage {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,7 @@ body {
 }
 
 .homepage form {
-  width: 70%;
+  width: 52%;
   text-align: center;
   position: relative;
 }
@@ -177,4 +177,181 @@ body {
   .homepage h1 {
     font-size: 40px;
   }
+
+  .homepage form {
+    width: 62%;
+  }
+}
+
+.blog-container {
+  padding: 50px 15%;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  gap: 15px;
+}
+
+.blog-container .blog-card {
+  background-color: var(--primary-color);
+}
+
+.blog-container .blog-card img {
+  width: 100%;
+}
+
+.blog-container .blog-card .blog-card-content {
+  padding: 15px;
+}
+
+.blog-container .blog-card .blog-card-content h2 {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.blog-container .blog-card .blog-card-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.readmore-btn {
+  color: #fdfdfd;
+  background-color: var(--blue-color);
+  padding: 4px 7px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.readmore-btn:hover {
+  background-color: var(--bg-color);
+}
+
+footer {
+  height: 200px;
+  background-color: var(--primary-color);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .contact {
+  display: flex;
+  gap: 15px;
+}
+
+footer .contact li i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+footer .contact li i:hover {
+  color: var(--blue-color);
+}
+
+.user-footer p {
+  margin: 10px 0;
+}
+
+.user-footer p a {
+  color: var(--blue-color);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.create-post-footer {
+  background-color: var(--blue-color);
+  color: #fdfdfd;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* REGISTER FORM */
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 100px 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-form h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.create-form form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+  padding: 100px 2%;
+}
+
+.create-form form input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.create-form form textarea {
+  resize: none;
+  height: 100px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.create-form form button {
+  padding: 7px 2px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--blue-color);
+  color: #fdfdfd;
+  font-weight: 900;
+}
+
+/* REGISTER */
+
+.register-page {
+  height: 100vh;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+}
+
+.register-form input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: #fdfdfd;
+}
+
+.register-form button {
+  padding: 12px;
+  background-color: var(--blue-color);
+  color: #fdfdfd;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
 }
